@@ -2,9 +2,7 @@
 
 ![schemes](figures/schemes.png)
 
-
-https://github.com/mit-han-lab/streaming-llm/assets/40906949/f0af8b59-d91a-4395-bf14-1bd9acbdfa87
-
+https://github.com/mit-han-lab/streaming-llm/assets/40906949/2bd1cda4-a0bd-47d1-a023-fbf7779b8358
 
 ## TL;DR
 We deploy LLMs for infinite-length inputs without sacrificing efficiency and performance.
@@ -21,7 +19,7 @@ conda create -yn streaming python=3.8
 conda activate streaming
 
 pip install torch torchvision torchaudio
-pip install transformers accelerate datasets evaluate wandb scikit-learn scipy sentencepiece
+pip install transformers==4.33.0 accelerate datasets evaluate wandb scikit-learn scipy sentencepiece
 
 python setup.py develop
 ```
@@ -58,7 +56,7 @@ CUDA_VISIBLE_DEVICES=0 python examples/run_streaming_llama.py  --enable_streamin
 We will release the code and data in the following order, please stay tuned!
 
 - [x] Release core code of StreamingLLM, including Llama-2, MPT, Falcon, and Pythia.
-- [x] Release perplexity evn code
+- [x] Release perplexity evaluation code
 - [x] Release Streaming Llama Chatbot demo.
 - [ ] Release StreamEval dataset and evaluation code.
 
